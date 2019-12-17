@@ -101,12 +101,11 @@ input{
 @media only screen and (max-width: 600px) {
 
     body{
-        overflow: scroll;
         overflow-x: hidden;
     }
 
     .all-container{
-        padding-top: 25%;
+        height: 100%
     }
 
     .section{
