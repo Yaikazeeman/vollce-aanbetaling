@@ -21,7 +21,6 @@ h2{
 
 body{
     margin: 0;
-    overflow: hidden;
     background-color: #343E47;
     background-image: url("./images/background.png");
     background-size: cover;
@@ -30,6 +29,10 @@ body{
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+
+}
+
+.all-container{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -50,8 +53,6 @@ body{
 #header{
     margin-bottom: 4%;
 }
-
-
 
 form{
     width: 100%;
@@ -95,4 +96,31 @@ input{
     background-color: #343E47;
     color: white;
     border: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .all-container{
+        padding-top: 25%;
+    }
+
+    .section{
+        height: initial;
+        margin: 5%;
+        margin-top: 15%;
+    }
+
+    form{
+        flex-direction: column;
+    }
+
+    .stap1, .stap2, .stap3{
+        width: 90%;
+    }
+
 }
